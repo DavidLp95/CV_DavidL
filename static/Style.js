@@ -22,24 +22,20 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       button.addEventListener("click", () => {
-        currentLanguage = currentLanguage === "en" ? "es" : "en";
-        console.log("Language toggled t o:", currentLanguage);
-        button.textContent = currentLanguage === "en" ? "ES/EN" : "EN/ES";
+      currentLanguage = currentLanguage === "en" ? "es" : "en";
+      console.log("Language toggled to:", currentLanguage);
+       button.textContent = currentLanguage === "en" ? "ES/EN" : "EN/ES";
 
-        const elements = document.querySelectorAll("[data-en][data-es]");
-        console.log("Found elements:", elements.length);
-        if (elements.length === 0) {
-          console.warn("No elements with data-en and data-es attributes found.");
-        }
+  // Selecciona TODOS los elementos con data-en y data-es (sin importar su etiqueta)
+      const elements = document.querySelectorAll("[data-en][data-es]");
+      console.log("Found elements:", elements.length);
 
-        elements.forEach((element) => {
-          const link = element.querySelector("a");
-          if (link) {
-            link.textContent = currentLanguage === "en" ? element.dataset.en : element.dataset.es;
-          }
-        });
+      elements.forEach((element) => {
+        // Actualiza directamente el textContent del elemento (no solo los <a>)
+        element.textContent = currentLanguage === "en" ? element.dataset.en : element.dataset.es;
       });
     });
+        });
 
 
 // ------------------------------------------------ SECCION DEL CARRUSEL DOOM
