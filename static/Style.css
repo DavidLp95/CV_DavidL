@@ -5,6 +5,9 @@
 }
 body{
     background-color:black;
+    height: 100vh;
+    box-sizing: border-box;
+
 }
 
 
@@ -220,13 +223,22 @@ body:lang(en) #traducion_ingles {
 .sobre-mi_seccion2{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    place-items: center;
     gap: 1rem;
     font-family: var(--font_main);
 }
+
+
 .sobre-mi_seccion2 p{
     font-family: var(--font2);
+}
+
+.data_aboutme{
+   
+    text-align: justify;
+    font-size: 1.2rem;
+    color: black;
+    padding: 1rem;
 }
 
 
@@ -321,8 +333,9 @@ body {
 /* Contenedor principal */
 .carrusel-simple {
     position: relative;
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 100%;
+    justify-items: center;
+   
     overflow: hidden;
     
 }
@@ -353,8 +366,8 @@ body {
 }
 .img__carrusel{
      width: 100%; /* Ocupa todo el ancho del contenedor */
-    height: 400px; /* Define una altura fija */
-    object-fit: cover;
+    height: 100%; /* Define una altura fija */
+    object-fit:contain;
 }
 
 

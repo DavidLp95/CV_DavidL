@@ -9,7 +9,7 @@
 
 
 // ------------------------------------------------------------boteon de traductor ----------------------------------------
-//varibale de inicializacion de indioma 
+//varibale de inicializacion de idioma
 let currentLanguage ="es";
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -102,28 +102,5 @@ document.addEventListener('DOMContentLoaded', function() {
     showSlide(currentIndex);
 });
 
-
-// // traductor del html a ingles
-
-// function translateToEnglish() {
-//     const elemento = document.getElementById('traducion_:ingles'); // Reemplaza 'elemento' con el ID del elemento que deseas traducir
-//     if ('traducion_:ingles' === elemento.id) {
-//         elemento.innerHTML = "English"; // Reemplaza con la traducción deseada
-//     } else {
-//         console.error("Elemento no encontrado");
-//     }
-
-// }
-// // Llamar a la función para traducir al inglés
-// translateToEnglish();
-// // traductor del html a español
-// function translateToSpanish() {
-//     const elemento = document.getElementById('traducion_:espanol'); // Reemplaza 'elemento' con el ID del elemento que deseas traducir
-//     if ('traducion_:espanol' === elemento.id) {
-//         elemento.innerHTML = "Español"; // Reemplaza con la traducción deseada
-//     } else {
-//         console.error("Elemento no encontrado");
-//     }
-// }
 
 
