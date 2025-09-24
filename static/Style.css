@@ -333,11 +333,17 @@ body {
 /* Contenedor principal */
 .carrusel-simple {
     position: relative;
-    max-width: 100%;
+    max-width: 90%;
     justify-items: center;
-   
     overflow: hidden;
     
+}
+
+@media (max-width: 430px) {
+    .carrusel-simple {
+        max-width: 100%;
+        overflow: hidden;
+    }
 }
 
 /* Contenedor de slides */
@@ -365,7 +371,7 @@ body {
     
 }
 .img__carrusel{
-     width: 100%; /* Ocupa todo el ancho del contenedor */
+     width: auto%; /* Ocupa todo el ancho del contenedor */
     height: 100%; /* Define una altura fija */
     object-fit:contain;
 }
