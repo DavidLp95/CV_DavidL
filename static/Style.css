@@ -628,17 +628,7 @@ body {
     
 }
 
-@media (max-width: 430px) {
-    .contenedor_tecno {
-        width: 15px;
-        height: 10px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
 
-         
-    }
-}
 
 .contenedor_tecno img{
     width: 2rem;
@@ -648,9 +638,7 @@ body {
 
 
 
-footer{
-    display: block;
-}
+
 
 .titulos_deseccion{
     width: 100%;
@@ -675,21 +663,6 @@ footer{
 }
 
 
-@media (max-width: 430px) {
-    .contenedor_tecnoAprendidas {
-        grid-template-columns: repeat(auto-fit, minmax(50px, 4fr));
-
-    }
-
-   
-    .contenedor_tecno{
-        grid-template-columns: repeat(auto-fit, minmax(50px, 3fr));
-    }
-    .contenedor_tecno p {
-        font-size: 0.6rem;
-    }
-
-}
 
 .contenedorTecnologiasPoraprender{
     width: auto;
@@ -724,29 +697,98 @@ footer{
     
 }
 
-.tecnologias p{
 
-    font-size: 0.8rem;
+@media (max-width: 300px) {
 
-    
-}
 
-.contenedor_seccion{
-    width: 100%;
-    height: 15rem;
-    padding: 2rem;
-    margin-bottom: 3rem;
-    overflow: hidden;
-    color: black;
-    
+    .tecnologias{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        padding: 0.5rem;
+    }
+    .contenedor_tecno{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
 
-}
+    .contenedor_tecnoAprendidas{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
 
-@media (max-width: 430px) {
-    .contenedor_seccion {
-        height: 50rem;
-        padding: 5rem;
-        margin-bottom: 1rem;
+    }
+
+
+
+    @media (max-width: 300px) {
+
+    /* Títulos */
+    .titulo_tecnologiasIzquirda{
+        font-size: 1.1rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .titulos_deseccion{
+        grid-template-columns: 1fr;
+        font-size: 1.2rem;
+        text-align: center;
+        padding: 0.4rem;
+    }
+
+    /* Contenedores principales */
+    .contenedor_tecno,
+    .contenedor_tecnoAprendidas,
+    .contenedorTecnologiasPoraprender{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0.5rem;
+        margin: 0;
+    }
+
+    /* Imágenes */
+    .contenedor_tecno img{
+        width: 1.5rem;
+        height: 1.5rem;
+        margin: 0.3rem;
+    }
+
+    .contenedorTecnologiasPoraprender img{
+        width: 2rem;
+        height: 2rem;
+        margin: 0.3rem;
+    }
+
+    /* Tarjetas de tecnologías */
+    .tecnologias{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.5rem;
+        margin: 0.3rem;
     }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
