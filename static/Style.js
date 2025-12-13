@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let intervalo = setInterval(function() {
         currentIndex++;
         showSlide(currentIndex);
-    }, 3000); // Cambia cada 3 segundos
+    }, 2000); // Cambia cada 3 segundos
     
     // Pausar autoplay cuando el mouse está sobre el carrusel
     slidesContainer.addEventListener('mouseenter', function() {
@@ -101,6 +101,13 @@ document.addEventListener('DOMContentLoaded', function() {
     // Mostrar el primer slide al cargar
     showSlide(currentIndex);
 });
+
+
+
+// enlace para los diplomas 
+
+
+
 
 
 
